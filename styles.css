@@ -1,0 +1,156 @@
+body{
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #424949;
+    /* margin: 0; */
+}
+
+body,h2,div,input,button{
+    padding: 0;
+    margin: 0;
+}
+
+.add-nombres{
+    margin-top: 2rem;
+}
+
+.nombres{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #C39BD3;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #1ABC9C;
+
+}
+.nombre{
+    display: grid;
+    grid-template-columns: minmax(100px,300px) 1fr;
+    border-bottom: 2px solid #1ABC9C;
+}
+
+.options{
+    display: flex;
+    justify-self: end;
+}
+#name, #add{
+    padding: 4px 8px;
+    margin: 10px;
+    border: 1px solid #D68910;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+.options button{
+    background-color: transparent;
+    border: none;
+    margin: 5px 20px;
+    outline: none;
+}
+
+.delete:hover{
+    color: #444;
+    cursor: pointer;
+}
+
+.imposible{
+    color: #555;
+}
+
+.posible{
+    color: #42f;
+}
+
+.posible:hover{
+    color: #9F7AC5;
+    cursor: pointer;
+
+}
+
+.nombre h2{
+    padding: 10px;
+}
+
+/* .fix{
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    background-color: #1ABC9C;
+    top: 0;
+    right: 0;
+} */
+
+@media screen and (min-width:1280px){    
+    
+    .caja{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: fixed;
+        margin: 15px;
+    }
+
+    .caja1{
+        background-color: #D68910;
+        top: 0;
+        left: 0;
+        animation:  trasladarAbajo 1s alternate infinite ease-out;
+        z-index: 100;
+    } 
+    
+    .caja2{
+        background-color: slateblue;
+        bottom: 0;
+        left: 0;
+        animation:  trasladarArriba 2s alternate infinite ease-out;
+    } 
+
+    .caja3{
+        background-color: slateblue;
+        top: 0;
+        right: 0;
+        animation:  trasladarAbajo 2s alternate infinite ease-out;
+    } 
+    
+    .caja4{
+        background-color: #D68910;
+        right: 0;
+        bottom: 0;
+        animation:  trasladarArriba 1s alternate infinite ease-out;
+    } 
+
+    @keyframes trasladarAbajo{
+        0%{
+            transform: translateY(0);
+        }
+
+        50%{
+            transform: translate3d(10px);
+        }
+
+        100%{
+            transform: translateY(415px);
+        }
+        
+    }
+    
+    @keyframes trasladarArriba{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translate3d(10px);
+        }
+        100%{
+            transform: translateY(-415px);
+        }
+        
+    }
+        
+}
+
+
+
