@@ -3,7 +3,6 @@ body {
     font-family: sans-serif;
     text-align: center;
     background-color: #424949;
-    /* margin: 0; */
 }
 
 body,
@@ -19,19 +18,10 @@ button {
     margin-top: 2rem;
 }
 
-.rainbow-text {
-    font-size: 3em;
-    background: linear-gradient(
-        45deg,
-        #f09433 0%,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888 100%
-    );
-    background-clip: text;
-    color: transparent;
+h1 {
+    font-size: 2.2em;
 }
+
 .nombres {
     max-width: 600px;
     margin: auto;
@@ -39,6 +29,7 @@ button {
     background-color: #5499c7;
     border-radius: 15px;
     overflow: hidden;
+    font-size: 1em;
 }
 .nombre {
     display: grid;
